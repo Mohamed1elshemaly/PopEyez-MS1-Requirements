@@ -35,7 +35,7 @@ export default function Venues({ selectedEventId, setNotice }) {
       <section className="panel">
         <div className="section-header">
           <div>
-            <h3>Discover and shortlist venues</h3>
+            <h3>Search and shortlist venues</h3>
             <p>Filter available venue listings by city, date, and capacity, then submit venue applications.</p>
           </div>
         </div>
