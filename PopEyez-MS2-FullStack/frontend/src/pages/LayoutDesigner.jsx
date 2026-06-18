@@ -61,7 +61,7 @@ export default function LayoutDesigner({ selectedEventId, setNotice, role }) {
     <section className="panel">
       <div className="section-header">
         <div>
-          <h3>Digital venue layout</h3>
+          <h3>Digital venue layout. </h3>
           <p>Design floor plans, share with setup staff, and export the layout. Use the arrows to move elements.</p>
         </div>
         {role === 'organizer' && (
@@ -92,7 +92,9 @@ export default function LayoutDesigner({ selectedEventId, setNotice, role }) {
           </div>
         ))}
       </div>
-      <p className="muted">Shared with setup team: {layout.sharedWithSetupTeam ? 'Yes' : 'No'}</p>
+      <p className="muted">Shared wth setup team: {layout.sharedWithSetupTeam ? 'Yes' : 'No'}</p>
     </section>
   );
+  // test commit by John
+
 }

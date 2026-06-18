@@ -48,7 +48,7 @@ export default function EventsTasks({ events, setEvents, selectedEventId, setNot
         <div className="section-header">
           <div>
             <h3>Upcoming events</h3>
-            <p>View upcoming events and filter them by date.</p>
+            <p>View upcoming event and filter them by date.</p>
           </div>
           <input type="date" value={dateFilter} onChange={(event) => setDateFilter(event.target.value)} />
         </div>
@@ -111,4 +111,6 @@ export default function EventsTasks({ events, setEvents, selectedEventId, setNot
       </section>
     </div>
   );
+  // John test commit 2
+
 }
