@@ -1,0 +1,17 @@
+{
+  "name": "popeyez-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend API for PopEyez Milestone 2",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "seed": "node scripts/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {}
+}

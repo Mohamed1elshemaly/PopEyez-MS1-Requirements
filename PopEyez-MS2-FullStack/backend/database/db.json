@@ -1,0 +1,610 @@
+{
+  "users": [
+    {
+      "id": "USR-ORG-01",
+      "name": "Nour Hassan",
+      "email": "organizer@popeyez.com",
+      "role": "organizer",
+      "status": "active",
+      "speciality": "Event Lead",
+      "phone": "+20 100 000 1001"
+    },
+    {
+      "id": "USR-STF-01",
+      "name": "Omar Adel",
+      "email": "staff.setup@popeyez.com",
+      "role": "staff",
+      "status": "active",
+      "speciality": "Setup",
+      "employmentType": "part-time",
+      "age": 22
+    },
+    {
+      "id": "USR-STF-02",
+      "name": "Laila Samir",
+      "email": "staff.catering@popeyez.com",
+      "role": "staff",
+      "status": "active",
+      "speciality": "Catering",
+      "employmentType": "full-time",
+      "age": 24
+    },
+    {
+      "id": "USR-VND-01",
+      "name": "Bean Brothers Roastery",
+      "email": "vendor.beans@example.com",
+      "role": "vendor",
+      "status": "active",
+      "suppliesOffered": [
+        "Coffee beans",
+        "Milk",
+        "Cups"
+      ],
+      "mainLocation": "Cairo",
+      "pricingList": "Coffee beans 900 EGP/kg, cups 1.5 EGP/unit"
+    },
+    {
+      "id": "USR-VND-02",
+      "name": "Sweet Corner Bakery",
+      "email": "vendor.bakery@example.com",
+      "role": "vendor",
+      "status": "active",
+      "suppliesOffered": [
+        "Croissants",
+        "Cookies",
+        "Brownies"
+      ],
+      "mainLocation": "Giza",
+      "pricingList": "Pastries from 25 EGP/unit"
+    },
+    {
+      "id": "USR-VENUE-01",
+      "name": "Downtown Spaces Co.",
+      "email": "owner@downtownspaces.com",
+      "role": "venueOwner",
+      "status": "active",
+      "companyName": "Downtown Spaces Co.",
+      "phone": "+20 100 555 1000"
+    },
+    {
+      "id": "GUEST-01",
+      "name": "Mariam Youssef",
+      "email": "mariam@example.com",
+      "role": "guest",
+      "status": "active",
+      "dietaryPreference": "Vegetarian"
+    },
+    {
+      "id": "GUEST-02",
+      "name": "Karim Tarek",
+      "email": "karim@example.com",
+      "role": "guest",
+      "status": "active",
+      "dietaryPreference": "No nuts"
+    },
+    {
+      "id": "GUEST-03",
+      "name": "Sara Magdy",
+      "email": "sara@example.com",
+      "role": "guest",
+      "status": "active",
+      "dietaryPreference": "None"
+    }
+  ],
+  "events": [
+    {
+      "id": "EVT-001",
+      "name": "Sunset Brew Weekend",
+      "type": "Pop-Up Café",
+      "date": "2026-06-28",
+      "time": "17:00",
+      "status": "Planning",
+      "venueId": "VEN-001",
+      "organizerId": "USR-ORG-01",
+      "expectedGuests": 80,
+      "dressCode": "Smart casual",
+      "agenda": "Coffee tasting, live cookies station, acoustic set",
+      "positiveFeedbackAverage": 4.6,
+      "negativeFeedbackAverage": 1.2
+    },
+    {
+      "id": "EVT-002",
+      "name": "Art Gallery Espresso Night",
+      "type": "Coffee Event",
+      "date": "2026-07-05",
+      "time": "19:00",
+      "status": "Confirmed",
+      "venueId": "VEN-002",
+      "organizerId": "USR-ORG-01",
+      "expectedGuests": 45,
+      "dressCode": "Casual",
+      "agenda": "Gallery walk, espresso bar, mini desserts",
+      "positiveFeedbackAverage": 4.1,
+      "negativeFeedbackAverage": 1.6
+    },
+    {
+      "id": "EVT-003",
+      "name": "Rooftop Brunch Pop-Up",
+      "type": "Brunch",
+      "date": "2026-07-14",
+      "time": "11:00",
+      "status": "Planning",
+      "venueId": "VEN-003",
+      "organizerId": "USR-ORG-01",
+      "expectedGuests": 60,
+      "dressCode": "Summer casual",
+      "agenda": "Brunch menu, filter coffee, guest feedback survey",
+      "positiveFeedbackAverage": 4.3,
+      "negativeFeedbackAverage": 1.4
+    }
+  ],
+  "venues": [
+    {
+      "id": "VEN-001",
+      "ownerId": "USR-VENUE-01",
+      "name": "Downtown Loft",
+      "description": "Industrial loft suitable for weekend cafés and tasting events.",
+      "city": "Cairo",
+      "location": "Downtown Cairo",
+      "capacity": 100,
+      "dimensions": 180,
+      "amenities": [
+        "Wi-Fi",
+        "Kitchenette",
+        "Projector",
+        "Air conditioning"
+      ],
+      "pricing": 12000,
+      "availableDates": [
+        "2026-06-28",
+        "2026-06-29",
+        "2026-07-04"
+      ],
+      "photos": [
+        "loft-front.jpg",
+        "loft-hall.jpg"
+      ],
+      "floorPlans": [
+        "loft-floor-plan.pdf"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "VEN-002",
+      "ownerId": "USR-VENUE-01",
+      "name": "Zamalek Art Space",
+      "description": "Gallery-style venue with high foot traffic and flexible seating.",
+      "city": "Cairo",
+      "location": "Zamalek",
+      "capacity": 55,
+      "dimensions": 95,
+      "amenities": [
+        "Art lighting",
+        "Sound system",
+        "Storage room"
+      ],
+      "pricing": 8500,
+      "availableDates": [
+        "2026-07-05",
+        "2026-07-06"
+      ],
+      "photos": [
+        "gallery-main.jpg"
+      ],
+      "floorPlans": [
+        "zamalek-plan.pdf"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "VEN-003",
+      "ownerId": "USR-VENUE-01",
+      "name": "Maadi Rooftop",
+      "description": "Open-air rooftop for brunch concepts and small concerts.",
+      "city": "Cairo",
+      "location": "Maadi",
+      "capacity": 70,
+      "dimensions": 120,
+      "amenities": [
+        "Outdoor seating",
+        "Kitchen access",
+        "Restrooms"
+      ],
+      "pricing": 10000,
+      "availableDates": [
+        "2026-07-14",
+        "2026-07-15"
+      ],
+      "photos": [
+        "rooftop-view.jpg"
+      ],
+      "floorPlans": [
+        "maadi-rooftop.png"
+      ],
+      "status": "active"
+    }
+  ],
+  "bookingRequests": [
+    {
+      "id": "BR-001",
+      "eventId": "EVT-001",
+      "venueId": "VEN-001",
+      "organizerId": "USR-ORG-01",
+      "eventType": "Pop-Up Café",
+      "date": "2026-06-28",
+      "expectedAttendees": 80,
+      "specialRequirements": "Coffee bar electricity and storage space",
+      "status": "Approved",
+      "counterProposal": "Approved at standard weekend pricing."
+    },
+    {
+      "id": "BR-002",
+      "eventId": "EVT-003",
+      "venueId": "VEN-003",
+      "organizerId": "USR-ORG-01",
+      "eventType": "Brunch",
+      "date": "2026-07-14",
+      "expectedAttendees": 60,
+      "specialRequirements": "Early setup at 8 AM",
+      "status": "Pending",
+      "counterProposal": ""
+    }
+  ],
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "eventId": "EVT-001",
+      "title": "Confirm venue booking",
+      "category": "Venue",
+      "status": "Done",
+      "dueDate": "2026-06-15",
+      "assignedTo": "USR-STF-01",
+      "reminderSent": true
+    },
+    {
+      "id": "TASK-002",
+      "eventId": "EVT-001",
+      "title": "Finalize pastry quantities",
+      "category": "Catering",
+      "status": "In Progress",
+      "dueDate": "2026-06-20",
+      "assignedTo": "USR-STF-02",
+      "reminderSent": false
+    },
+    {
+      "id": "TASK-003",
+      "eventId": "EVT-001",
+      "title": "Print QR check-in sheet",
+      "category": "Guest Check-In",
+      "status": "Pending",
+      "dueDate": "2026-06-27",
+      "assignedTo": "USR-STF-01",
+      "reminderSent": false
+    },
+    {
+      "id": "TASK-004",
+      "eventId": "EVT-002",
+      "title": "Send guest invitations",
+      "category": "Guest Management",
+      "status": "Done",
+      "dueDate": "2026-06-23",
+      "assignedTo": "USR-ORG-01",
+      "reminderSent": true
+    },
+    {
+      "id": "TASK-005",
+      "eventId": "EVT-003",
+      "title": "Design rooftop layout",
+      "category": "Layout",
+      "status": "Pending",
+      "dueDate": "2026-07-08",
+      "assignedTo": "USR-STF-01",
+      "reminderSent": false
+    }
+  ],
+  "budgets": [
+    {
+      "eventId": "EVT-001",
+      "plannedTotal": 50000,
+      "plannedItems": [
+        {
+          "id": "PBI-001",
+          "name": "Venue",
+          "amount": 12000
+        },
+        {
+          "id": "PBI-002",
+          "name": "Coffee supplies",
+          "amount": 14000
+        },
+        {
+          "id": "PBI-003",
+          "name": "Bakery",
+          "amount": 10000
+        },
+        {
+          "id": "PBI-004",
+          "name": "Marketing",
+          "amount": 6000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "EXP-001",
+          "name": "Venue deposit",
+          "amount": 6000,
+          "date": "2026-06-12"
+        },
+        {
+          "id": "EXP-002",
+          "name": "Instagram ads",
+          "amount": 2300,
+          "date": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "eventId": "EVT-002",
+      "plannedTotal": 35000,
+      "plannedItems": [
+        {
+          "id": "PBI-005",
+          "name": "Venue",
+          "amount": 8500
+        },
+        {
+          "id": "PBI-006",
+          "name": "Supplies",
+          "amount": 11000
+        },
+        {
+          "id": "PBI-007",
+          "name": "Décor",
+          "amount": 5000
+        }
+      ],
+      "actualExpenses": [
+        {
+          "id": "EXP-003",
+          "name": "Venue payment",
+          "amount": 8500,
+          "date": "2026-06-25"
+        }
+      ]
+    }
+  ],
+  "layouts": [
+    {
+      "eventId": "EVT-001",
+      "sharedWithSetupTeam": true,
+      "elements": [
+        {
+          "id": "EL-001",
+          "type": "Coffee Bar",
+          "x": 30,
+          "y": 40
+        },
+        {
+          "id": "EL-002",
+          "type": "Seating Area",
+          "x": 200,
+          "y": 100
+        },
+        {
+          "id": "EL-003",
+          "type": "Check-In Desk",
+          "x": 20,
+          "y": 180
+        }
+      ]
+    },
+    {
+      "eventId": "EVT-003",
+      "sharedWithSetupTeam": false,
+      "elements": [
+        {
+          "id": "EL-004",
+          "type": "Buffet Table",
+          "x": 50,
+          "y": 50
+        },
+        {
+          "id": "EL-005",
+          "type": "Photo Spot",
+          "x": 230,
+          "y": 140
+        }
+      ]
+    }
+  ],
+  "vendors": [
+    {
+      "id": "VND-001",
+      "userId": "USR-VND-01",
+      "name": "Bean Brothers Roastery",
+      "suppliesOffered": [
+        "Coffee beans",
+        "Milk",
+        "Cups"
+      ],
+      "mainLocation": "Cairo",
+      "pricingList": "Coffee beans 900 EGP/kg, cups 1.5 EGP/unit",
+      "contact": "vendor.beans@example.com"
+    },
+    {
+      "id": "VND-002",
+      "userId": "USR-VND-02",
+      "name": "Sweet Corner Bakery",
+      "suppliesOffered": [
+        "Croissants",
+        "Cookies",
+        "Brownies"
+      ],
+      "mainLocation": "Giza",
+      "pricingList": "Pastries from 25 EGP/unit",
+      "contact": "vendor.bakery@example.com"
+    }
+  ],
+  "sourcingRequests": [
+    {
+      "id": "SRC-001",
+      "eventId": "EVT-001",
+      "vendorId": "VND-001",
+      "organizerId": "USR-ORG-01",
+      "items": "12kg espresso beans, 400 paper cups, 30L milk",
+      "quantities": "Mixed",
+      "deliveryDate": "2026-06-28",
+      "eventLocation": "Downtown Loft",
+      "status": "Accepted",
+      "message": "Delivery before 2 PM please.",
+      "deliveryStatus": "Preparing",
+      "delayNote": ""
+    },
+    {
+      "id": "SRC-002",
+      "eventId": "EVT-001",
+      "vendorId": "VND-002",
+      "organizerId": "USR-ORG-01",
+      "items": "120 croissants, 90 cookies",
+      "quantities": "210 units",
+      "deliveryDate": "2026-06-28",
+      "eventLocation": "Downtown Loft",
+      "status": "Pending",
+      "message": "Please confirm nut-free cookie options.",
+      "deliveryStatus": "Not Started",
+      "delayNote": ""
+    }
+  ],
+  "invoices": [
+    {
+      "id": "INV-001",
+      "eventId": "EVT-001",
+      "vendorId": "VND-001",
+      "amount": 17600,
+      "items": "Coffee supplies and cups",
+      "status": "Pending Review",
+      "attachments": [
+        "itemized-coffee.pdf"
+      ]
+    },
+    {
+      "id": "INV-002",
+      "eventId": "EVT-002",
+      "vendorId": "VND-002",
+      "amount": 5600,
+      "items": "Mini desserts",
+      "status": "Approved",
+      "attachments": [
+        "dessert-invoice.pdf"
+      ]
+    }
+  ],
+  "guests": [
+    {
+      "id": "GST-001",
+      "eventId": "EVT-001",
+      "name": "Mariam Youssef",
+      "email": "mariam@example.com",
+      "rsvpStatus": "Attending",
+      "dietaryPreference": "Vegetarian",
+      "specialRequirements": "Window seat if possible",
+      "invitationSent": true,
+      "checkedIn": false,
+      "qrCode": "QR-GST-001"
+    },
+    {
+      "id": "GST-002",
+      "eventId": "EVT-001",
+      "name": "Karim Tarek",
+      "email": "karim@example.com",
+      "rsvpStatus": "Maybe",
+      "dietaryPreference": "No nuts",
+      "specialRequirements": "",
+      "invitationSent": true,
+      "checkedIn": true,
+      "qrCode": "QR-GST-002"
+    },
+    {
+      "id": "GST-003",
+      "eventId": "EVT-001",
+      "name": "Sara Magdy",
+      "email": "sara@example.com",
+      "rsvpStatus": "Not Attending",
+      "dietaryPreference": "None",
+      "specialRequirements": "",
+      "invitationSent": true,
+      "checkedIn": false,
+      "qrCode": "QR-GST-003"
+    },
+    {
+      "id": "GST-004",
+      "eventId": "EVT-002",
+      "name": "Youssef Nabil",
+      "email": "youssef@example.com",
+      "rsvpStatus": "Attending",
+      "dietaryPreference": "Lactose-free",
+      "specialRequirements": "",
+      "invitationSent": true,
+      "checkedIn": false,
+      "qrCode": "QR-GST-004"
+    }
+  ],
+  "communications": [
+    {
+      "id": "COM-001",
+      "eventId": "EVT-001",
+      "message": "Welcome! Doors open at 5 PM. Use Gate B for check-in.",
+      "sentAt": "2026-06-28T12:00:00.000Z",
+      "recipients": [
+        {
+          "guestId": "GST-001",
+          "seen": true
+        },
+        {
+          "guestId": "GST-002",
+          "seen": true
+        },
+        {
+          "guestId": "GST-003",
+          "seen": false
+        }
+      ]
+    }
+  ],
+  "feedback": [
+    {
+      "id": "FDB-001",
+      "eventId": "EVT-002",
+      "guestId": "GST-004",
+      "overall": 5,
+      "food": 4,
+      "venue": 5,
+      "organization": 4,
+      "comments": "Great venue and smooth check-in."
+    },
+    {
+      "id": "FDB-002",
+      "eventId": "EVT-001",
+      "guestId": "GST-002",
+      "overall": 4,
+      "food": 5,
+      "venue": 4,
+      "organization": 5,
+      "comments": "Loved the coffee selection."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOT-001",
+      "userId": "USR-ORG-01",
+      "message": "Task TASK-003 is due soon.",
+      "read": false
+    },
+    {
+      "id": "NOT-002",
+      "userId": "USR-VND-01",
+      "message": "Invoice INV-001 is pending organizer review.",
+      "read": false
+    }
+  ]
+}
