@@ -49,7 +49,7 @@ export default function GuestPortal({ selectedEventId, setNotice }) {
   return (
     <div className="page-grid">
       <section className="hero panel">
-        <p className="eyebrow">Digital invitation</p>
+        <p className="eyebrow">Digital invitation.</p>
         <h3>{eventDetails.name}</h3>
         <p>{eventDetails.date} at {eventDetails.time} • Venue ID: {eventDetails.venueId}</p>
         <p>Dress code: {eventDetails.dressCode}</p>
@@ -64,7 +64,7 @@ export default function GuestPortal({ selectedEventId, setNotice }) {
 
       <section className="panel two-column">
         <div>
-          <h3>Day-of messages</h3>
+          <h3>Day-of msgs</h3>
           <DataTable
             columns={[
               { key: 'message', label: 'Message' },
@@ -82,7 +82,7 @@ export default function GuestPortal({ selectedEventId, setNotice }) {
               </label>
             ))}
             <textarea placeholder="Open comments" value={feedbackForm.comments} onChange={(e) => setFeedbackForm({ ...feedbackForm, comments: e.target.value })} />
-            <button>Submit feedback</button>
+            <button>Submit feedbck</button>
           </form>
         </div>
       </section>
